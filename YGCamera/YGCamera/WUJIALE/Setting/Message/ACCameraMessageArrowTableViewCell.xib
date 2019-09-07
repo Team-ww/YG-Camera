@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="47" id="KGk-i7-Jjw" customClass="ACCameraMessageArrowTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="399" height="47"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="399" height="46.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sch-Uq-jq0">
+                        <rect key="frame" x="0.0" y="0.0" width="399" height="46.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K1b-87-W97">
+                                <rect key="frame" x="20" y="45.5" width="359" height="1"/>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="ya4-Pm-aZD"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用说明书" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iqh-es-YWJ">
+                                <rect key="frame" x="25" y="23" width="61.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                <color key="textColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right" translatesAutoresizingMaskIntoConstraints="NO" id="GQs-qQ-q5u">
+                                <rect key="frame" x="364" y="25.5" width="10" height="10"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Iqh-es-YWJ" firstAttribute="leading" secondItem="Sch-Uq-jq0" secondAttribute="leading" constant="25" id="3F5-vQ-hge"/>
+                            <constraint firstAttribute="trailing" secondItem="K1b-87-W97" secondAttribute="trailing" constant="20" id="3UG-Fv-Xyx"/>
+                            <constraint firstItem="K1b-87-W97" firstAttribute="top" secondItem="Iqh-es-YWJ" secondAttribute="bottom" constant="8" id="5w7-tI-zUA"/>
+                            <constraint firstItem="GQs-qQ-q5u" firstAttribute="centerY" secondItem="Iqh-es-YWJ" secondAttribute="centerY" id="MMB-w9-dbB"/>
+                            <constraint firstAttribute="bottom" secondItem="K1b-87-W97" secondAttribute="bottom" id="bQQ-we-98d"/>
+                            <constraint firstItem="K1b-87-W97" firstAttribute="leading" secondItem="Sch-Uq-jq0" secondAttribute="leading" constant="20" id="vUl-EW-LIj"/>
+                            <constraint firstAttribute="trailing" secondItem="GQs-qQ-q5u" secondAttribute="trailing" constant="25" id="y8T-De-Y7W"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Sch-Uq-jq0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Oh7-9R-DfK"/>
+                    <constraint firstAttribute="bottom" secondItem="Sch-Uq-jq0" secondAttribute="bottom" id="W5H-Ez-Xmo"/>
+                    <constraint firstItem="Sch-Uq-jq0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="efq-en-GSG"/>
+                    <constraint firstAttribute="trailing" secondItem="Sch-Uq-jq0" secondAttribute="trailing" id="yFA-83-34R"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="titleLabel" destination="Iqh-es-YWJ" id="Ppv-Fm-Kym"/>
+            </connections>
+            <point key="canvasLocation" x="76" y="154"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="right" width="10" height="10"/>
+    </resources>
+</document>

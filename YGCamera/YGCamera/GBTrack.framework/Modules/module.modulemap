@@ -1,0 +1,6 @@
+framework module GBTrack {
+  umbrella header "GBTrack.h"
+
+  export *
+  module * { export * }
+}

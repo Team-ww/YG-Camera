@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="104" id="KGk-i7-Jjw" customClass="ACMixMusicTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="364" height="103.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y6b-zn-Koz">
+                        <rect key="frame" x="0.0" y="0.0" width="364" height="103.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="曲目000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8X-kl-3Ry">
+                                <rect key="frame" x="20" y="47" width="44" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="e00-Ez-oM6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="8"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BI6-wf-h9Q">
+                                <rect key="frame" x="104" y="47" width="240" height="10"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="M8X-kl-3Ry" firstAttribute="leading" secondItem="Y6b-zn-Koz" secondAttribute="leading" constant="20" id="5TB-gF-34F"/>
+                            <constraint firstItem="M8X-kl-3Ry" firstAttribute="centerY" secondItem="Y6b-zn-Koz" secondAttribute="centerY" id="AlF-5p-8WA"/>
+                            <constraint firstItem="BI6-wf-h9Q" firstAttribute="leading" secondItem="M8X-kl-3Ry" secondAttribute="trailing" constant="40" id="Pez-O7-a3q"/>
+                            <constraint firstItem="BI6-wf-h9Q" firstAttribute="centerY" secondItem="Y6b-zn-Koz" secondAttribute="centerY" id="Yqp-2r-CAT"/>
+                            <constraint firstAttribute="trailing" secondItem="BI6-wf-h9Q" secondAttribute="trailing" constant="20" id="dT9-82-357"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Y6b-zn-Koz" secondAttribute="bottom" id="6ac-ua-BsE"/>
+                    <constraint firstItem="Y6b-zn-Koz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="82P-nY-g6k"/>
+                    <constraint firstItem="Y6b-zn-Koz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Cpm-Ez-pbs"/>
+                    <constraint firstAttribute="trailing" secondItem="Y6b-zn-Koz" secondAttribute="trailing" id="JBO-G7-Q2s"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="musicName" destination="BI6-wf-h9Q" id="elb-g8-N4a"/>
+                <outlet property="musicTitle" destination="M8X-kl-3Ry" id="mwG-HN-rf6"/>
+            </connections>
+            <point key="canvasLocation" x="155.07246376811597" y="173.4375"/>
+        </tableViewCell>
+    </objects>
+</document>

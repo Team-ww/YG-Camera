@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="120" id="KGk-i7-Jjw" customClass="CameraAreaSwitchTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="354" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="354" height="119.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ndr-Kv-Ofl">
+                        <rect key="frame" x="0.0" y="0.0" width="354" height="119.5"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FrZ-36-KEc">
+                                <rect key="frame" x="20" y="44.5" width="51" height="31"/>
+                                <color key="onTintColor" red="0.70588235290000001" green="0.78823529410000004" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </switch>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MDj-DU-cTF">
+                                <rect key="frame" x="89" y="45" width="245" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MF" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWJ-tN-YTI">
+                                        <rect key="frame" x="0.0" y="7.5" width="20" height="14.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="Lpc-Qh-CWl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Enu-6H-LIa">
+                                        <rect key="frame" x="30" y="0.0" width="215" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Enu-6H-LIa" firstAttribute="leading" secondItem="tWJ-tN-YTI" secondAttribute="trailing" constant="10" id="9rB-rd-apq"/>
+                                    <constraint firstItem="tWJ-tN-YTI" firstAttribute="leading" secondItem="MDj-DU-cTF" secondAttribute="leading" id="9uz-jh-Bzf"/>
+                                    <constraint firstItem="tWJ-tN-YTI" firstAttribute="centerY" secondItem="MDj-DU-cTF" secondAttribute="centerY" id="AGh-LR-t86"/>
+                                    <constraint firstAttribute="bottom" secondItem="Enu-6H-LIa" secondAttribute="bottom" id="Dsi-Dd-HAW"/>
+                                    <constraint firstItem="Enu-6H-LIa" firstAttribute="top" secondItem="MDj-DU-cTF" secondAttribute="top" id="UXr-eZ-JyG"/>
+                                    <constraint firstItem="Enu-6H-LIa" firstAttribute="centerY" secondItem="MDj-DU-cTF" secondAttribute="centerY" id="gVK-sz-DHw"/>
+                                    <constraint firstAttribute="height" constant="30" id="qdf-6r-7FT"/>
+                                    <constraint firstAttribute="trailing" secondItem="Enu-6H-LIa" secondAttribute="trailing" id="uTI-HL-q2f"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MDj-DU-cTF" firstAttribute="centerY" secondItem="ndr-Kv-Ofl" secondAttribute="centerY" id="JBm-hP-QXo"/>
+                            <constraint firstItem="FrZ-36-KEc" firstAttribute="centerY" secondItem="ndr-Kv-Ofl" secondAttribute="centerY" id="kRb-Xe-x6M"/>
+                            <constraint firstAttribute="trailing" secondItem="MDj-DU-cTF" secondAttribute="trailing" constant="20" id="ks7-KQ-ysh"/>
+                            <constraint firstItem="FrZ-36-KEc" firstAttribute="leading" secondItem="ndr-Kv-Ofl" secondAttribute="leading" constant="20" id="t1U-Kb-bTe"/>
+                            <constraint firstItem="MDj-DU-cTF" firstAttribute="leading" secondItem="FrZ-36-KEc" secondAttribute="trailing" constant="20" id="u3w-Sh-C73"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ndr-Kv-Ofl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="80c-7l-XzC"/>
+                    <constraint firstAttribute="bottom" secondItem="ndr-Kv-Ofl" secondAttribute="bottom" id="Cwq-0M-o4t"/>
+                    <constraint firstItem="ndr-Kv-Ofl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="R3B-zz-dd1"/>
+                    <constraint firstAttribute="trailing" secondItem="ndr-Kv-Ofl" secondAttribute="trailing" id="Ry1-tO-MM6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="areaSwitch" destination="FrZ-36-KEc" id="sLe-PH-DFJ"/>
+                <outlet property="prewView" destination="Enu-6H-LIa" id="9Sm-du-2C1"/>
+            </connections>
+            <point key="canvasLocation" x="155.07246376811597" y="160.04464285714286"/>
+        </tableViewCell>
+    </objects>
+</document>

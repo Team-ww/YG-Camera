@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ACCameraSetDetailCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="261" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="261" height="180"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ptd-b6-YzT">
+                        <rect key="frame" x="0.0" y="0.0" width="261" height="180"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pwU-zC-H2m">
+                                <rect key="frame" x="121.5" y="71.5" width="18.5" height="37"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera_n" translatesAutoresizingMaskIntoConstraints="NO" id="Szr-Uy-emM">
+                                        <rect key="frame" x="-1" y="0.0" width="20" height="21"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="拍摄" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fj-xF-RYt">
+                                        <rect key="frame" x="0.0" y="26" width="18.5" height="11"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                        <color key="textColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="5fj-xF-RYt" firstAttribute="top" secondItem="Szr-Uy-emM" secondAttribute="bottom" constant="5" id="36x-5C-rZd"/>
+                                    <constraint firstItem="5fj-xF-RYt" firstAttribute="centerX" secondItem="pwU-zC-H2m" secondAttribute="centerX" id="3ai-Bb-GeG"/>
+                                    <constraint firstItem="Szr-Uy-emM" firstAttribute="top" secondItem="pwU-zC-H2m" secondAttribute="top" id="NhC-7v-HQ9"/>
+                                    <constraint firstItem="Szr-Uy-emM" firstAttribute="centerX" secondItem="pwU-zC-H2m" secondAttribute="centerX" id="aSG-7r-Rg3"/>
+                                    <constraint firstItem="5fj-xF-RYt" firstAttribute="leading" secondItem="pwU-zC-H2m" secondAttribute="leading" id="drF-vY-1si"/>
+                                    <constraint firstAttribute="trailing" secondItem="5fj-xF-RYt" secondAttribute="trailing" id="lrk-FS-zbs"/>
+                                    <constraint firstAttribute="bottom" secondItem="5fj-xF-RYt" secondAttribute="bottom" id="tnO-uG-Gte"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pwU-zC-H2m" firstAttribute="centerX" secondItem="Ptd-b6-YzT" secondAttribute="centerX" id="Adz-qB-PRJ"/>
+                            <constraint firstItem="pwU-zC-H2m" firstAttribute="centerY" secondItem="Ptd-b6-YzT" secondAttribute="centerY" id="nFN-E7-daC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Ptd-b6-YzT" secondAttribute="trailing" id="0OB-Hu-ZIU"/>
+                <constraint firstItem="Ptd-b6-YzT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="C3b-VP-7Cw"/>
+                <constraint firstItem="Ptd-b6-YzT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="nRk-dO-ciU"/>
+                <constraint firstAttribute="bottom" secondItem="Ptd-b6-YzT" secondAttribute="bottom" id="w5h-E7-Uw7"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="261" height="180"/>
+            <connections>
+                <outlet property="bgView" destination="Ptd-b6-YzT" id="lvE-2b-FZD"/>
+                <outlet property="imageView" destination="Szr-Uy-emM" id="4pm-eB-E7N"/>
+                <outlet property="titleLabel" destination="5fj-xF-RYt" id="h4I-Xi-cdh"/>
+            </connections>
+            <point key="canvasLocation" x="290.57971014492756" y="196.20535714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="camera_n" width="20" height="21"/>
+    </resources>
+</document>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ACVideoFilterCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="181" height="164"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="181" height="164"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mvX-69-MGH">
+                        <rect key="frame" x="0.0" y="0.0" width="181" height="164"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PFJ-L4-Ai1">
+                                <rect key="frame" x="0.0" y="5" width="181" height="154"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xfh-1i-jEo">
+                                <rect key="frame" x="0.0" y="143" width="181" height="16"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="原图" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZc-Zi-f6S">
+                                        <rect key="frame" x="80.5" y="2" width="20.5" height="12"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.39909771126760563" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="rZc-Zi-f6S" firstAttribute="centerY" secondItem="Xfh-1i-jEo" secondAttribute="centerY" id="8F1-Qi-lEn"/>
+                                    <constraint firstItem="rZc-Zi-f6S" firstAttribute="centerX" secondItem="Xfh-1i-jEo" secondAttribute="centerX" id="HLX-DH-H55"/>
+                                    <constraint firstAttribute="height" constant="16" id="X5u-iB-bGe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Xfh-1i-jEo" secondAttribute="trailing" id="2e0-Kn-HrY"/>
+                            <constraint firstItem="Xfh-1i-jEo" firstAttribute="leading" secondItem="mvX-69-MGH" secondAttribute="leading" id="81f-1L-prU"/>
+                            <constraint firstAttribute="bottom" secondItem="PFJ-L4-Ai1" secondAttribute="bottom" constant="5" id="DHc-qY-TDE"/>
+                            <constraint firstItem="PFJ-L4-Ai1" firstAttribute="leading" secondItem="mvX-69-MGH" secondAttribute="leading" id="M77-Id-N2Z"/>
+                            <constraint firstAttribute="trailing" secondItem="PFJ-L4-Ai1" secondAttribute="trailing" id="R1W-eM-KYU"/>
+                            <constraint firstAttribute="bottom" secondItem="Xfh-1i-jEo" secondAttribute="bottom" constant="5" id="VnI-20-Rvv"/>
+                            <constraint firstItem="PFJ-L4-Ai1" firstAttribute="top" secondItem="mvX-69-MGH" secondAttribute="top" constant="5" id="xOR-QL-3PY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="mvX-69-MGH" secondAttribute="bottom" id="EjM-AL-kTe"/>
+                <constraint firstItem="mvX-69-MGH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="aaH-b6-AcH"/>
+                <constraint firstItem="mvX-69-MGH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="dw4-Bj-IHn"/>
+                <constraint firstAttribute="trailing" secondItem="mvX-69-MGH" secondAttribute="trailing" id="j0M-Jw-PXp"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="181" height="164"/>
+            <connections>
+                <outlet property="imageView" destination="PFJ-L4-Ai1" id="KF0-7l-ACa"/>
+                <outlet property="titleLabel" destination="rZc-Zi-f6S" id="7Zl-Uw-l8q"/>
+            </connections>
+            <point key="canvasLocation" x="261.59420289855075" y="136.60714285714286"/>
+        </collectionViewCell>
+    </objects>
+</document>

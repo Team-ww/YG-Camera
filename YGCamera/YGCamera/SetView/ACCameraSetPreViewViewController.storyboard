@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Camera Set Pre View View Controller-->
+        <scene sceneID="nIW-DS-ave">
+            <objects>
+                <viewController storyboardIdentifier="SetPreView_ID" id="Efb-DO-MmG" customClass="ACCameraSetPreViewViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="18j-nC-ehP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebv-FR-MqU">
+                                <rect key="frame" x="0.0" y="44" width="414" height="422"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XMa-rS-Tjk">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="ip4-UI-7GS"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a44-AJ-vlp">
+                                        <rect key="frame" x="10" y="60" width="394" height="1"/>
+                                        <color key="backgroundColor" red="0.52941176470588236" green="0.51764705882352935" blue="0.51764705882352935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="ho1-jG-7Xu"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gTx-9y-zNi">
+                                        <rect key="frame" x="0.0" y="61" width="414" height="361"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="a44-AJ-vlp" secondAttribute="trailing" constant="10" id="5Vb-ZW-gmK"/>
+                                    <constraint firstItem="gTx-9y-zNi" firstAttribute="top" secondItem="a44-AJ-vlp" secondAttribute="bottom" id="C2w-Vv-MRJ"/>
+                                    <constraint firstItem="gTx-9y-zNi" firstAttribute="trailing" secondItem="XMa-rS-Tjk" secondAttribute="trailing" id="Hp5-Z4-ZQZ"/>
+                                    <constraint firstItem="XMa-rS-Tjk" firstAttribute="leading" secondItem="ebv-FR-MqU" secondAttribute="leading" id="L9a-W2-nNW"/>
+                                    <constraint firstItem="gTx-9y-zNi" firstAttribute="leading" secondItem="XMa-rS-Tjk" secondAttribute="leading" id="LSt-pA-wJC"/>
+                                    <constraint firstItem="XMa-rS-Tjk" firstAttribute="top" secondItem="ebv-FR-MqU" secondAttribute="top" id="PCi-87-KFl"/>
+                                    <constraint firstAttribute="bottom" secondItem="gTx-9y-zNi" secondAttribute="bottom" id="QeP-a9-inl"/>
+                                    <constraint firstAttribute="trailing" secondItem="XMa-rS-Tjk" secondAttribute="trailing" id="acU-ac-ph8"/>
+                                    <constraint firstItem="a44-AJ-vlp" firstAttribute="top" secondItem="XMa-rS-Tjk" secondAttribute="bottom" id="fV9-NE-Lq7"/>
+                                    <constraint firstItem="a44-AJ-vlp" firstAttribute="leading" secondItem="ebv-FR-MqU" secondAttribute="leading" constant="10" id="gln-hQ-bdd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2Gs-u3-cY7" firstAttribute="trailing" secondItem="ebv-FR-MqU" secondAttribute="trailing" id="1ff-Ti-97a"/>
+                            <constraint firstItem="ebv-FR-MqU" firstAttribute="leading" secondItem="2Gs-u3-cY7" secondAttribute="leading" id="Woi-NK-099"/>
+                            <constraint firstItem="2Gs-u3-cY7" firstAttribute="bottom" secondItem="ebv-FR-MqU" secondAttribute="bottom" id="Zex-24-KKq"/>
+                            <constraint firstItem="ebv-FR-MqU" firstAttribute="top" secondItem="2Gs-u3-cY7" secondAttribute="top" id="vEU-C6-yeq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2Gs-u3-cY7"/>
+                    </view>
+                    <size key="freeformSize" width="414" height="500"/>
+                    <connections>
+                        <outlet property="bottomView" destination="gTx-9y-zNi" id="HDa-g7-adO"/>
+                        <outlet property="topView" destination="XMa-rS-Tjk" id="Dnp-UW-8qr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hfD-Rr-vcN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="242.0289855072464" y="-95.758928571428569"/>
+        </scene>
+    </scenes>
+</document>

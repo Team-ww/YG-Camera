@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="53" id="KGk-i7-Jjw" customClass="ACCameraSwitchTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="392" height="53"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="392" height="52.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YPx-E3-Ch7">
+                        <rect key="frame" x="0.0" y="0.0" width="392" height="52.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a5j-bf-DVf">
+                                <rect key="frame" x="20" y="51.5" width="352" height="1"/>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="JXz-Bd-WCz"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="相机手动模式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMN-8w-2Ov">
+                                <rect key="frame" x="25" y="27" width="74" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.44705882349999998" green="0.4431372549" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cf3-Wv-AUm">
+                                <rect key="frame" x="323" y="19" width="51" height="31"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xMN-8w-2Ov" firstAttribute="leading" secondItem="YPx-E3-Ch7" secondAttribute="leading" constant="25" id="B0b-XI-yk6"/>
+                            <constraint firstItem="a5j-bf-DVf" firstAttribute="leading" secondItem="YPx-E3-Ch7" secondAttribute="leading" constant="20" id="LaP-PD-udL"/>
+                            <constraint firstAttribute="trailing" secondItem="cf3-Wv-AUm" secondAttribute="trailing" constant="20" id="M7T-pI-YR6"/>
+                            <constraint firstAttribute="bottom" secondItem="a5j-bf-DVf" secondAttribute="bottom" id="VFd-dG-Phr"/>
+                            <constraint firstItem="a5j-bf-DVf" firstAttribute="top" secondItem="xMN-8w-2Ov" secondAttribute="bottom" constant="10" id="Y8e-XC-cTc"/>
+                            <constraint firstAttribute="trailing" secondItem="a5j-bf-DVf" secondAttribute="trailing" constant="20" id="Zww-4B-Usi"/>
+                            <constraint firstItem="cf3-Wv-AUm" firstAttribute="centerY" secondItem="xMN-8w-2Ov" secondAttribute="centerY" id="iRC-Fa-3qq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="YPx-E3-Ch7" secondAttribute="trailing" id="GUw-zI-s1B"/>
+                    <constraint firstItem="YPx-E3-Ch7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Jpl-aE-Aq5"/>
+                    <constraint firstAttribute="bottom" secondItem="YPx-E3-Ch7" secondAttribute="bottom" id="h05-hA-uIS"/>
+                    <constraint firstItem="YPx-E3-Ch7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="uSv-Ow-eJu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="modelSwitch" destination="cf3-Wv-AUm" id="MgD-dx-fwm"/>
+                <outlet property="switchLab" destination="xMN-8w-2Ov" id="61Q-jq-AX8"/>
+            </connections>
+            <point key="canvasLocation" x="184.05797101449278" y="187.83482142857142"/>
+        </tableViewCell>
+    </objects>
+</document>
